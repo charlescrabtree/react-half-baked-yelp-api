@@ -16,6 +16,7 @@ const handler = async (event) => {
       body: JSON.stringify(data.businesses),
     };
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.error(e);
     return {
       statusCode: 500,
