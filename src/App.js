@@ -36,7 +36,7 @@ function App() {
         </div>
         <div className="form-control">
           <label>Query:</label>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search..." onChange={(e) => setSearch(e.target.value)} />
         </div>
         <button onClick={handleSearch}>Search</button>
       </div>
